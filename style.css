@@ -1,0 +1,126 @@
+*
+{
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+
+}
+
+body
+{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo
+{
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+.container-input
+{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container-input span
+{
+    color: white;
+    font-size: 22px;
+}
+
+.slider
+{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: white;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.button-cta                                    /*botao*/
+{
+    height: 40px;
+    background-color: #8500dd;
+    border: 0;
+    border-radius: 4px;                        /*arredondamento das bordas*/
+    cursor: pointer;                           /*cursor de quando passa em cima*/
+    margin-top: 40px;                          /*espaçamento entre a parte de cima do botao*/
+    color: white;                            /*cor do escrito no botao*/
+    font-weight: bold;                         /*deixar fonte em negrito*/
+    font-size: 18px;                           /*tamanho da fonte do escrito*/
+}
+
+.container-password
+{
+    max-width: 480px;                          /*tamanho do conteudo*/
+    margin: 14px 0;                            /*espaçamento de 14 em cima e embaixo e 0 nas laterais*/
+    display: flex;
+    align-items: center;                       /*alinhar no centro*/
+    flex-direction: column;                    /*um item abaixo do outro*/
+    cursor: pointer;                           /*cursor de quando passa em cima*/
+}
+
+.title
+{
+    text-align: center;
+    color: white;                            /*cor do "sua senha gerada foi"*/
+    font-size: 28px;                           /*tamanho da fonte do escrito*/
+    margin-top: 24px;                          /*espaçamento entre a parte de cima do botao*/
+    margin-bottom: 8px;                        /*espaçamento entre "sua senha gerada foi" e a senha*/
+}
+
+.password
+{
+    height: 60px;                              /*altura da senha*/
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;                   /*alinhamento vertical*/
+    align-items: center;                       /*alinhamento horizontal*/
+    color: #8500dd;                          /*cor da senha*/
+    border: 1px solid #313131;               /*borda de outra cor*/
+    transition: transform 0.5s;                /*a transformação da senha muda suave*/
+}
+
+.password:hover
+{
+    transform: scale(1.05);                    /*a senha gerada aumenta quando passa em cima*/
+}
+
+.tooltip
+{
+    color: white;
+    position: relative;
+    top: 20px;                                 /*espaçamento da parte de cima*/
+    padding: 6px 8px;                          /*6px em cima e baixo || 8px esq e dir*/
+    background: rgb(15, 15, 15);             /*fundo*/
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .tooltip
+{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+.hide
+{
+    display: none;
+}
