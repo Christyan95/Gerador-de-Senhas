@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -13,14 +13,13 @@
 
 
 <body>
-
-    <img class="logo" src="./assets/logo.png" alt="Gerador de senha logo"/>
+    <img class="logo" src="./assets/logo.png" alt="Gerador de senha logo" />
 
     <main class="container-input">
-            <span>Tamanho <span id="valor"></span> caracteres</span>
-            <input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
+        <span>Tamanho <span id="valor"></span> caracteres</span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15" />
 
-            <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
+        <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
     </main>
 
     <div id="container-password" onclick="copyPassword()" class="container-password hide">
@@ -31,4 +30,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
